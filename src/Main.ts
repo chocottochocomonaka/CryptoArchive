@@ -1,3 +1,6 @@
+// pm2で登録したい場合は右のコードをターミナルに実行(注意 startではない): pm2 start CryptoArchive/src/Main.ts --name "CryptoArchive" --interpreter npx --interpreter-args "ts-node"
+
+
 import WebSocket from "ws";
 import { Archive } from "./Archive";
 import { ChangeCrypt } from "./ChangeCrypt";
@@ -44,3 +47,4 @@ async function connect(currency: string) {
 connect("btc");
 connect("eth");
 connect("xrp");
+
